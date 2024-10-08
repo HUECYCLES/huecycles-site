@@ -1,8 +1,8 @@
 /* ---------- CSS Variables - Colors & Sizing ---------- */
 :root {
     --background: #000000;
-    --font: "8 Bit Operator Bold";
-    --secondary-font: "8 Bit Operator";
+    --font: "Lucida Console";
+    --secondary-font: "Lucida Console";
     --h1: #ffffff;
     --h2: #dfdfdf;
     --h3: #c6c6c6;
@@ -15,10 +15,6 @@
     --textarea-border: #e7d9d9;
     --font-tiny: 80%;
     --font-very-tiny: 50%;
-    --cursor-main: url(../assets/img/heart.png), auto;
-    --cursor-pointer: url(../assets/img/heart_break.png) 2 0, auto;
-    --cursor-alt: url(../assets/img/heart_yellow.png), auto;
-    --cursor-pointer-alt: url(../assets/img/heart_yellow_break.png) 2 0, auto;
     --text-shadow: 2px 2px #0f0f71;
     --text-shadow-hover: 2px 2px #710f57;
     --text-shadow-footer: 2px 2px #333333;
@@ -29,32 +25,6 @@
 @font-face {
     font-family: 'Deltarune';
     src: url("../assets/fonts/Deltarune.ttf") format("truetype");
-}
-
-@font-face {
-    font-family: '8 Bit Operator';
-    src: url('../assets/fonts/8bitoperatorplus-regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: '8 Bit Operator Bold';
-    src: url('../assets/fonts/8bitoperatorplus-bold.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'EASy Text';
-    src: url('../assets/fonts/easytext.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'wingdings';
-    src: url("../assets/fonts/wingdings.ttf") format("truetype");
 }
 
 /* ---------- Generic Styles - Applies to ALL ---------- */

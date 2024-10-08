@@ -180,13 +180,13 @@ body.notfound-page {
 }
 
 .notfound-text {
-  /* Centering the text on the screen */
-  text-align: center;
-  position: fixed; /* or absolute */
-  top: 50%;
-  left: 50%;
-  /* bring your own prefixes */
-  transform: translate(-50%, -50%);
+    /* Centering the text on the screen */
+    text-align: center;
+    position: fixed; /* or absolute */
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
 }
 
 #canvas {
@@ -194,13 +194,17 @@ body.notfound-page {
 }
 
 .overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0); /* Transparent background - GPT*/
-  pointer-events: none; /* Allow clicks to go through - GPT*/
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0); /* Transparent background - GPT*/
+	pointer-events: none; /* Allow clicks to go through - GPT*/
+}
+
+.filter-white{
+	filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(127deg) brightness(106%) contrast(101%);
 }
   
 /* Selected Text */
