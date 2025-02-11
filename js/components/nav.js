@@ -22,7 +22,8 @@ class MyNav extends HTMLElement {
             .sidenav a {
                 padding: 6px 8px 6px 16px;
                 text-decoration: none;
-                color: var(--link)
+                color: var(--link);
+                transition: 0.3s;
             }
 
             .sidenav a:hover {
@@ -32,6 +33,12 @@ class MyNav extends HTMLElement {
             .sidenav img {
                 image-rendering: pixelated;
                 padding-bottom: 10px;
+                transition: transform 200ms ease-out;
+                filter: drop-shadow(5px 5px 5px black);
+            }
+            
+            .sidenav img:hover {
+                transform: scale(1.05);
             }
         </style>
             <div class="sidenav">
