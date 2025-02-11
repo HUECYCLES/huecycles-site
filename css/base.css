@@ -18,7 +18,7 @@
 	--textarea: #2c2530;
 	--textarea-border: #dfd9e7;
 
-	--border-color: #4d0f71;
+	--border-color: #623968;
 }
 
 /* ---------- Generic Styles - Applies to ALL ---------- */
@@ -54,25 +54,25 @@ hr {
 }
 
 table {
-	border: 2px solid;
-	border-color: var(--border-color);
+	border-collapse: collapse;
 	padding: 0px;
 }
 
 th {
+	border: 2px, solid, var(--border-color);
 	text-align: left;
 	padding: 20px;
-	font-family: var(--font);
 }
 
 td {
+	border: 2px, solid, var(--border-color);
 	text-align: left;
 	padding: 20px;
-	font-family: var(--secondary_font);
 }
 
-tr:nth-child(even) {background-color: #0a0a17;}
-tr:nth-child(odd) {background-color: var(--primary_color);}
+tr:first-child {
+	background-color: #281830;
+}
 
 /* ---------- Headings ---------- */
 h1 {
