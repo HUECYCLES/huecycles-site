@@ -65,13 +65,13 @@ table {
 th {
 	border: 2px, solid, var(--border-color);
 	text-align: left;
-	padding: 20px;
+	padding: 10px;
 }
 
 td {
 	border: 2px, solid, var(--border-color);
 	text-align: left;
-	padding: 20px;
+	padding: 10px;
 }
 
 tr:first-child {
