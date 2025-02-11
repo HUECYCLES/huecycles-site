@@ -1,77 +1,74 @@
 /* ---------- CSS Variables - Colors & Sizing ---------- */
 :root {
-    --background: #000000;
-    --font: "Lucida Console";
-    --secondary-font: "Lucida Console";
-    --h1: #ffffff;
-    --h2: #dfdfdf;
-    --h3: #c6c6c6;
-    --link-default: #ffffff;
-    --link-alt: #8f8f8f;
-    --link-hover: #ffff00;
-    --font-color: #ffffff;
-    --faint-text: #625f6a;
-    --textarea: #2c2530;
-    --textarea-border: #e7d9d9;
-    --font-tiny: 80%;
-    --font-very-tiny: 50%;
-    --text-shadow: 2px 2px #0f0f71;
-    --text-shadow-hover: 2px 2px #710f57;
-    --text-shadow-footer: 2px 2px #333333;
-    --border-color: #0f0f71;
-}
+	--background: #19141c;
 
-/*  ---------- Fonts  ---------- */
-@font-face {
-    font-family: 'Deltarune';
-    src: url("../assets/fonts/Deltarune.ttf") format("truetype");
+	--font: "Courier New";
+	--font-color: #ffffff;
+	--faint-text: #625f6a;
+	--font-tiny: 80%;
+	--font-very-tiny: 50%;
+
+	--h1: #ffffff;
+	--h2: #dfdfdf;
+	--h3: #c6c6c6;
+
+	--link: #8f8f8f;
+	--link-hover: #ff81be;
+
+	--textarea: #2c2530;
+	--textarea-border: #dfd9e7;
+
+	--border-color: #4d0f71;
 }
 
 /* ---------- Generic Styles - Applies to ALL ---------- */
 body {
-    background-color: #000000;
-    /* sans-serif is the fall back font */
-    font-family: var(--font), sans-serif;
-    line-height: 140%;
-    text-rendering: pixelated;
-    font-weight: normal;
-    text-shadow: var(--text-shadow);
+	background-color: var(--background);
+	font-family: var(--font), sans-serif;
+	color: var(--font-color);
+	line-height: 140%;
+	font-weight: normal;
+	text-shadow: var(--text-shadow);
 }
 
 /* ---------- Default Elements ---------- */
 p { 
-    margin-top: 16px;
-    margin-bottom: 16px;
-    font-size: 18px;
-    text-align: justify;
+	margin-top: 16px;
+	margin-bottom: 16px;
+	font-size: 18px;
+	text-align: justify;
 }
 
-hr {
-    margin: 3% 0 ;
-    opacity: 0.2;
-    /* border-top: 1px solid rgb(22, 22, 22); */
+a {
+	text-decoration: none;
+	color: var(--link);
 }
 
 a:hover {
-    text-shadow: var(--text-shadow-hover);
+	color: var(--link-hover);
+}
+
+hr {
+	margin: 3% 0 ;
+	opacity: 0.2;
 }
 
 table {
-    border: 2px solid;
-    border-color: var(--border-color);
-    padding: 0px;
+	border: 2px solid;
+	border-color: var(--border-color);
+	padding: 0px;
 }
 
 th {
-    text-align: left;
-    padding: 20px;
-    font-family: var(--font);
+	text-align: left;
+	padding: 20px;
+	font-family: var(--font);
 }
 
 td {
-    text-align: left;
-    padding: 20px;
-    font-family: var(--secondary_font);
+	text-align: left;
+	padding: 20px;
+	font-family: var(--secondary_font);
 }
 
 tr:nth-child(even) {background-color: #0a0a17;}
@@ -79,65 +76,96 @@ tr:nth-child(odd) {background-color: var(--primary_color);}
 
 /* ---------- Headings ---------- */
 h1 {
-    color: var(--h1);
-    font-size:40px;
-    margin-top: 25;
-    margin-bottom: 25;
-    font-weight: bold;
-    font-family: var(--font);
+	color: var(--h1);
+	font-size: 40px;
+	font-weight: bold;
+	margin-top: 25;
+	margin-bottom: 25;
 }
   
 h2 {
-    color: var(--h2);
-    font-size:30px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    font-weight: bold;
-    font-family: var(--font);
+	color: var(--h2);
+	font-size: 30px;
+	font-weight: bold;
+	margin-top: 30px;
+	margin-bottom: 30px;
 }
   
 h3 {
-    color: var(--h3);
-    font-size:22px;
-    font-weight: bold;
-    margin-top: 25px;
-    margin-bottom: 25px;
-    font-family: var(--font);
+	color: var(--h3);
+	font-size: 22px;
+	font-weight: bold;
+	margin-top: 25px;
+	margin-bottom: 25px;
 }  
 
 /* ---------- Alignment ---------- */
 .center {
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .left {
-    text-align: left;
-    margin-left: auto;
-    margin-right: auto;
+	text-align: left;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .right {
-    text-align: right;
-    margin-left: auto;
-    margin-right: auto;
+	text-align: right;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 /* ---------- Classes for Font Weight ---------- */
 .bold {
-    font-weight: bold;
+	font-weight: bold;
 }
 
 .italic {
-    font-style: italic;
+	font-style: italic;
 }
 
-/* ---------- Container Class ---------- */
+/* ---------- Classes for Image Rendering ---------- */
+.pixelated {
+	image-rendering: pixelated;
+}
+
+.smooth {
+	image-rendering: smooth;
+}
+
+/* ---------- Container + Wrapper + etc ---------- */
 .container {
-    display: inline;
-    padding-right: 6%;
-    padding-left: 6%;
+	display: inline;
+	padding-right: 6%;
+	padding-left: 6%;
 }
 
-/* ---------------------------------- */
+.wrapper {
+	width: 1500px;
+	gap: 40px;
+	padding: 20px;
+	margin: 0 auto;
+	top: 0px;
+}
+
+footer {
+	margin-top: 20px;
+}
+
+/* ---------- For SVGs ---------- */
+.filter-white {
+	filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(127deg) brightness(206%) contrast(101%);
+}
+
+.main {
+	margin-left: 180px;
+	padding: 0px 10px;
+}
+
+.links {
+	display: flex;
+	gap: 10px;
+}

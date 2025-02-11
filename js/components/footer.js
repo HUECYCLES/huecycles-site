@@ -12,23 +12,10 @@ class MyFooter extends HTMLElement {
         this.shadow.innerHTML =`
         <style>
             p {
-                text-shadow: none;
                 margin: 0 auto;
-            }
-            a {
-                text-decoration: none;
-                text-shadow: none;
-                cursor: var(--cursor-main);
-                color: var(--link-alt);
-                font-family: var(--main-font);
-                font-size: 140%;
-                font-weight: normal;
-                text-shadow: none;
-            }
-            a:hover {
-	            cursor: var(--cursor-main);
-	            color: var(--link-hover);
-                text-shadow: none;
+                text-align: center;
+                font-weight: bold;
+                color: var(--faint-text);
             }
         </style>
             <p>HUECYCLES © 2020-2025</p>

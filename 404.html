@@ -1,22 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-  	<head>
+	<head>
 		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
-		<title>Not Found</title>
+
+		<!-- Search Engines -->
+		<meta name="description" content="HUECYCLES' Portfolio Website">
+		<meta name="keywords" content="art, digital art, pixel art, character design, digital artist, artwork, gamedev">
+
+		<!-- SEO -->
+		<meta name="revisit-after" content="7 days">
+		<meta name="distribution" content="global">
+		<meta name="robots" content="index, nofollow">
+
+		<!-- Info -->
+		<meta property="og:title" content="HUECYCLES" />
+		<meta property="og:url" content="https://huecycles.com/" />
+		<meta property="og:description" content="COLOR CODED BRAIN"/>
+		<meta property="og:type" content="website">
+		<meta property="og:image" content="https://huecycles.com/assets/img/sona/idle.png"/>
+
+		<!-- Title & Favicon -->
+		<title>NOT FOUND</title>
 		<link rel="icon" type="image/png" href="assets/img/favicon.png" />
+
 		<!-- CSS -->
-		<link href="https://huecycles.com/css/reset.css" rel="stylesheet" type="text/css" media="all" />
-		<link href="https://huecycles.com/css/base.css" rel="stylesheet" type="text/css" media="all" />
-		<link href="https://huecycles.com/css/huesite.css" rel="stylesheet" type="text/css" media="all" />
-		<base href="https://huecycles.com">
- 	</head>
-  	<body class="notfound">
-		<div class="notfound-text"><h1>Oops!</h1><p>No page found here.</p></div>
-		<!-- Overlay for the animation - GPT-->
-		<div class="overlay">
-			<canvas id="canvas"></canvas>
+		<link href="css/base.css" rel="stylesheet" type="text/css" media="all" />
+	</head>
+	<body>
+		<div class="container">
+			<div class="wrapper">
+				<header>
+					<my-nav></my-nav>
+					<script src="js/components/nav.js"></script>
+				</header>
+				<div class="main">
+					<h1>OOPS!</h1>
+					<p>No page found here.</p>
+				</div>
+			</div>
+
+			<footer>
+				<my-footer></my-footer>
+				<script src="js/components/footer.js"></script>
+			</footer>
 		</div>
-  	</body>
+	</body>
 </html>

@@ -1,185 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<meta property="og:title" content="HUE'S VICIOUS CYCLE">
-	<meta property="og:url" content="https://huecycles.com/">
-	<meta property="og:description" content="Is there such a thing as a color coded brain?">
-	<meta property="og:image" content="https://huecycles.com/assets/img/brainrot.png">
-	<title>HUE'S VICIOUS CYCLE</title>
-	<link rel="icon" type="image/png" href="assets/img/favicon.png" />
-	<!-- CSS -->
-	<link href="css/reset.css" rel="stylesheet" type="text/css" media="all">
-	<link href="css/base.css" rel="stylesheet" type="text/css" media="all">
-	<link href="css/huesite.css" rel="stylesheet" type="text/css" media="all">
-</head>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+		<!-- Search Engines -->
+		<meta name="description" content="HUECYCLES' Portfolio Website">
+		<meta name="keywords" content="art, digital art, pixel art, character design, digital artist, artwork, gamedev">
+
+		<!-- SEO -->
+		<meta name="revisit-after" content="7 days">
+		<meta name="distribution" content="global">
+		<meta name="robots" content="index, follow">
+
+		<!-- Info -->
+		<meta property="og:title" content="HUECYCLES" />
+		<meta property="og:url" content="https://huecycles.com/" />
+		<meta property="og:description" content="COLOR CODED BRAIN"/>
+		<meta property="og:type" content="website">
+		<meta property="og:image" content="https://huecycles.com/assets/img/sona/idle.png"/>
+
+		<!-- Title & Favicon -->
+		<title>HUECYCLES</title>
+		<link rel="icon" type="image/png" href="assets/img/favicon.png" />
+
+		<!-- CSS -->
+		<link href="css/base.css" rel="stylesheet" type="text/css" media="all" />
+	</head>
 	<body>
-	<div class="wrapper">
-		<header>
-		<div class="logo-container">
-			<img class="image pixelated" src="./assets/img/logo.png" width="324" height="142" alt="Logo"/>
+		<div class="container">
+			<div class="wrapper">
+				<header>
+					<my-nav></my-nav>
+					<script src="js/components/nav.js"></script>
+				</header>
+				<div class="main">
+					<h1>ABOUT</h1>
+					<p>self-taught digital/pixel artist from Brazil, northeastern &#127797<br>
+						i love cats, colors and weird character design<br>
+						currently doing fanmade and original artwork/projects
+					</p>
+
+					<h2>FAQ</h2>
+					<h3>Q: What do you use for digital art and animation?</h3>
+					<p>i use Clip Studio Paint EX. before switching, i used PaintTool SAI.</p>
+					
+					<h3>Q: What about pixel art and music?</h3>
+					<p>i use Aseprite and FL Studio respectively.</p>
+					
+					<h3>Q: Do you do commissions?</h3>
+					<p>yes, through Ko-fi (when they are open).<br>
+						for more info, please take a look at the <a href="./commissions">commissions page</a>.
+					</p>
+					
+					<h2>Where to find me</h2>
+					<div class="links">
+						<a href="mailto:huecycled@gmail.com">
+							<img class="filter-white" src="assets/img/svg/email.svg", width="30", height="30">
+						</a>
+						<a href="https://huecycles.tumblr.com/">
+							<img class="filter-white" src="assets/img/svg/tumblr.svg", width="30", height="30">
+						</a>
+						<a href="https://bsky.app/profile/huecycles.com">
+							<img class="filter-white" src="assets/img/svg/bluesky.svg", width="30", height="30">
+						</a>
+						<a href="https://www.youtube.com/c/huecycles">
+							<img class="filter-white" src="assets/img/svg/youtube.svg", width="30", height="30">
+						</a>
+						<a href="https://soundcloud.com/huecycles">
+							<img class="filter-white" src="assets/img/svg/soundcloud.svg", width="30", height="30">
+						</a>
+					</ul>
+				</div>
+			</div>
+
+			<footer>
+				<my-footer></my-footer>
+				<script src="js/components/footer.js"></script>
+			</footer>
 		</div>
-		<nav>
-			<ul>
-			<li><a href="./">Home</a></li>
-			<li><a href="./about">About</a></li>
-			<li><a href="./portfolio">Portfolio</a></li>
-			<li><a href="./projects">Projects</a></li>
-			<li><a href="./commissions">Commissions</a></li>
-			</ul>
-		</nav>
-		</header>
-
-		<main>
-			<img src="assets/img/brainrot.png" width="200" height="200">
-			<h2>About HUECYCLES</h2>
-			<p>25 | she/they | Brazil</p>
-			<p>Hello, I'm HUECYCLES! :) You can just call me Hue for short. I do digital/pixel art, animation and am an aspiring
-			musician/gamedev. I think game developers are cool (I'd like to become one someday).</p>
-			<p>I'm self taught, and I'm still learning a ton of new stuff. Mostly posting fanart and original content on
-			social media!</p>
-
-			<p>Currently focusing on two Deltarune projects: Andromedia Chapters and Candleholder, plus LIGHTSPLIT
-				as my original project. Click on <a href="./projects">projects</a> to learn more about them :o)</p>
-
-			<h2>F.A.Q.</h2>
-			<h3>Q: What do you use for digital art and animation?</h3>
-			<p>I use Clip Studio Paint EX! Before switching, I used PaintTool SAI.</p>
-			<h3>Q: What about pixel art and music?</h3>
-			<p>I use Aseprite and FL Studio respectively.</p>
-			<h3>Q: Do you do commissions?</h3>
-			<p>Yes, through Ko-fi (when they are open) and social media! Contact me whenever and I'll give you a response. <a
-				href="https://ko-fi.com/huecycles">Here's my Ko-fi page</a>.</p>
-			<h3>Q: Do you know how to code?</h3>
-			<p>A little bit! I'm learning Lua with the <a href="https://kristal.cc/">Kristal engine</a>, and I know very very
-			basic GML in Game Maker Studio 2. I have a few old projects in there, like a copy of Pong and Flappy Bird that I
-			made with the help of a GMS2 course.</p>
-			<h2>Links</h2>
-			<ul>
-				<li>
-					<a href="https://huecycles.tumblr.com/">
-					<img class="filter-white" src="assets/img/svg/tumblr.svg", width="30", height="30">
-					</a>
-				</li>
-				<li>
-					<a href="https://twitter.com/HUECYCLES">
-					<img class="filter-white" src="assets/img/svg/twitter-alt.svg", width="30", height="30">
-					</a>
-				</li>
-				<li>
-					<a href="https://www.instagram.com/huecycles/">
-					<img class="filter-white" src="assets/img/svg/instagram.svg", width="30", height="30">
-					</a>
-				</li>
-				<li>
-					<a href="https://www.youtube.com/c/huecycles">
-						<img class="filter-white" src="assets/img/svg/youtube.svg", width="30", height="30">
-					</a>
-				</li>
-				<li>
-					<a href="https://soundcloud.com/huecycles">
-						<img class="filter-white" src="assets/img/svg/soundcloud.svg", width="30", height="30">
-					</a>
-				</li>
-			</ul>
-			
-			<p>
-			<a href="https://neocities.org/site/huecycles">Neocities Profile (Mirror)</a>
-			</p>
-
-			<hr>
-
-			<h2>Cool Sites + Buttons</h2>
-			<p>This is my website button! Feel free to share it around (No hotlinking, please!)</p>
-			<p>
-			<img class="image pixelated" src="assets/img/button/huecycles.png" alt="HUECYCLES.COM banner">
-			</p>
-
-			<textarea cols="20" rows="4">
-				<a href="https://huecycles.com/"><img src="BUTTON_NAME"></a>
-			</textarea>
-			<br>
-
-			<!-- Kristal -->
-			<a href="https://kristal.cc/" target="_blank" rel="noopener noreferrer" title="Kristal Engine">
-			<img class="image pixelated" src="assets/img/button/kristal.png">
-			</a>
-			<!-- Neon Bandit -->
-			<a href="https://ne0nbandit.neocities.org/" target="_blank" rel="noopener noreferrer" title="Neon Bandit Street">
-			<img class="image pixelated" src="assets/img/button/neon.png">
-			</a>
-			<!-- Cinnamuff -->
-			<a href="https://cinnamuff.neocities.org/" target="_blank" rel="noopener noreferrer" title="Cinnamuff">
-			<img class="image pixelated" src="assets/img/button/cinnamuffbtn.png">
-			</a>
-			<!-- Strings Attached -->
-			<a href="https://stringsattached.neocities.org/" target="_blank" rel="noopener noreferrer" title="Strings Attached">
-			<img class="image pixelated" src="assets/img/button/strings.gif"
-				alt="A site button with text reading: Strings Attached. The text flashes periodically. A sprite of Spamton appears on the right of the text and changes as he notices the green strings that appear behind him.">
-			</a>
-			<!-- Eggramen -->
-			<a href="https://eggramen.neocities.org" target="_blank" rel="noopener noreferrer" title="Eggramen">
-			<img class="image pixelated" src="assets/img/button/eggramen_button_simple.png">
-			</a>
-			<!-- Dimden -->
-			<a href="https://dimden.dev/" target="_blank" rel="noopener noreferrer" title="Dimden">
-			<img class="image pixelated" src="https://dimden.dev/services/images/88x31.gif">
-			</a>
-			<!-- CubicSimulation -->
-			<a href="https://cubicsimulation.neocities.org/" target="_blank" rel="noopener noreferrer" title="CubicSimulation">
-			<img class="image pixelated" src="assets/img/button/cubic_button.gif">
-			</a>
-			<!-- Leusyth -->
-			<a href="https://leusyth.neocities.org" target="_blank" rel="noopener noreferrer" title="leusyth">
-			<img class="image pixelated" src=https://leusyth.neocities.org/images/leusyth.png>
-			</a>
-			<!-- Soupie -->
-			<a href="https://soupie.neocities.org/" target="_blank" rel="noopener noreferrer" title="Soupie">
-			<img class="image pixelated" src="assets/img/button/soupiebutton.png">
-			</a>
-			<!-- YNOProject -->
-			<a href="https://ynoproject.net/" target="_blank" rel="noopener noreferrer" title="Yume Nikki Online Project">
-			<img class="image pixelated" src="assets/img/button/ynobutton.png">
-			</a>
-			<!-- OnlySans -->
-			<a href="https://onlysans.neocities.org/" target="_blank" rel="noopener noreferrer" title="OnlySans">
-			<img class="image pixelated" src="assets/img/button/onlysans.png">
-			</a>
-			<!-- Kenome -->
-			<a href="https://kenome.neocities.org" target="_blank" rel="noopener noreferrer" title="Kenome">
-			<img class="image pixelated" src="https://kenome.neocities.org/img/banner.gif" style="border: 1px solid #000000;">
-			</a>
-			<!-- GhostingPen -->
-			<a href="https://ghostingpen.neocities.org" target="_blank" rel="noopener noreferrer" title="Ghosting Pen">
-			<img class="image pixelated" src="assets/img/button/ghostingpen.gif">
-			</a>
-			<!-- Whitedesert -->
-			<a href="https://whitedesert.neocities.org" target="_blank" rel="noopener noreferrer" title="whitedesert">
-			<img class="image pixelated" src="assets/img/button/whitedesertbutton.png">
-			</a>
-			<!-- Beebfreeb -->
-			<a href="https://beebfreeb.neocities.org/" target="_blank" rel="noopener noreferrer" title="beebfreeb">
-			<img class="image pixelated" src="assets/img/button/button_beebfreeb.gif">
-			</a>
-			<!-- BechnoKid -->
-			<a href="https://bechnokid.neocities.org/" target="_blank" rel="noopener noreferrer" title="bechnokid">
-			<img class="image pixelated" src="assets/img/button/bechnokid.jpg">
-			<!-- Fulvern -->
-			<a href="https://fulvern.neocities.org/"><img src="assets/img/button/FulvernButton.gif"alt="Fulvern Button"></a>
-			</a>
-			<!-- Doffy -->
-			<a href="https://doffy.neocities.org/"><img src="https://doffy.neocities.org/button_1.gif"></a>
-			<!-- Keeri -->
-			<a href="https://keeri.place/"><img src="assets/img/button/keeri.gif"></a>
-		</main> 
-		<!-- End of .main -->
-		<footer>
-			<span style="color: var(--faint-text);">HUECYCLES © 2020 - 2024
-			<br>Website designed by <a href="https://huecycles.com/about">HUECYCLES</a> & <a href="https://wiltzy.art/">WILTZY</a></span>
-		</footer>
-	</div>
-	<!-- End of .wrapper -->
 	</body>
 </html>

@@ -2,47 +2,48 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
-		<meta property="og:title" content="HUE'S VICIOUS CYCLE" />
+
+		<!-- Search Engines -->
+		<meta name="description" content="HUECYCLES' Portfolio Website">
+		<meta name="keywords" content="art, digital art, pixel art, character design, digital artist, artwork, gamedev">
+
+		<!-- SEO -->
+		<meta name="revisit-after" content="7 days">
+		<meta name="distribution" content="global">
+		<meta name="robots" content="index, follow">
+
+		<!-- Info -->
+		<meta property="og:title" content="HUECYCLES" />
 		<meta property="og:url" content="https://huecycles.com/" />
-		<meta property="og:description" content="Is there such a thing as a color coded brain?" />
-		<meta property="og:image" content="https://huecycles.com/assets/img/brainrot.png"/>
-		<title>HUE'S VICIOUS CYCLE</title>
+		<meta property="og:description" content="COLOR CODED BRAIN"/>
+		<meta property="og:type" content="website">
+		<meta property="og:image" content="https://huecycles.com/assets/img/sona/idle.png"/>
+
+		<!-- Title & Favicon -->
+		<title></title>
 		<link rel="icon" type="image/png" href="assets/img/favicon.png" />
+
 		<!-- CSS -->
-		<link href="css/reset.css" rel="stylesheet" type="text/css" media="all" />
 		<link href="css/base.css" rel="stylesheet" type="text/css" media="all" />
-		<link href="css/huesite.css" rel="stylesheet" type="text/css" media="all" />
-    	<link href="css/projects.css" rel="stylesheet" type="text/css" media="all" />
 	</head>
 	<body>
-		<div class="wrapper">
-		<header>
-			<div class="logo-container">
-				<img class="image pixelated" src="./assets/img/logo.png" width="324" height="142" alt="Logo"/>
+		<div class="container">
+			<div class="wrapper">
+				<header>
+					<my-nav></my-nav>
+					<script src="js/components/nav.js"></script>
+				</header>
+				<div class="main">
+					<p>IN PROGRESS</p>
+				</div>
 			</div>
-			<nav>
-			<ul>
-				<li><a href="./index">Home</a></li>
-				<li><a href="./about">About</a></li>
-				<li><a href="./portfolio">Portfolio</a></li>
-				<li><a href="./projects">Projects</a></li>
-				<li><a href="./commissions">Commissions</a></li>
-			</ul>
-			</nav>
-		</header>
 
-		<main>
-			<p style="text-align: center;"><a href="https://astraldisc.com/"><span class="deltarune">DELTARUNE</span> Projects</a></p>
-		</main>
-
-		<footer>
-			<span style="color: var(--faint-text);">HUECYCLES © 2020 - 2024
-			<br>Website designed by <a href="https://huecycles.com/about">HUECYCLES</a> & <a href="https://wiltzy.art/">WILTZY</a></span>
-		</footer>
-		
+			<footer>
+				<my-footer></my-footer>
+				<script src="js/components/footer.js"></script>
+			</footer>
 		</div>
-		<!-- End of .wrapper -->
 	</body>
 </html>
